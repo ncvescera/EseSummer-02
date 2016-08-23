@@ -6,7 +6,7 @@ public class Garage {
     private final int TARIFFA_MOTO = 10;
     private final int TARIFFA_FURGONE = 30;
     
-    Veicolo[] posti;
+    private Veicolo[] posti;
     public Garage(){
         posti = new Veicolo[POSTI];
     }
