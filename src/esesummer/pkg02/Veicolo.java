@@ -68,4 +68,12 @@ public class Veicolo {
     public int getTariffa(){
         return this.tariffa;
     }
+    
+    public void print(){
+        System.out.println("Tipo: "+this.tipo);
+        System.out.println("Proprietario: "+this.proprietario);
+        System.out.println("Targa: "+this.targa);
+        System.out.println("Entrata: "+this.entrataS);
+        System.out.println("Uscita: "+this.uscitaS);
+    }
 }

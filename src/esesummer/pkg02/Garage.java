@@ -65,4 +65,11 @@ public class Garage {
             System.out.println("--------------------------------------------------------------------------------------");
         }
     }
+    
+    public void piuInfo(int posto){
+        if(posto < this.POSTI && this.posti[posto] != null)
+            this.posti[posto].print();
+        else
+            System.err.println("Errore! Il posto è vuoto.");
+    }
 }

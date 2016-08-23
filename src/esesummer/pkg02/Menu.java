@@ -3,7 +3,7 @@ package esesummer.pkg02;
 public class Menu {
     public static void print(){
         System.out.println("--------------------Menu--------------------");
-        System.out.println("1) Aggiungi veicolo\t2) Rimuovi veicolo\n3)Stampa resoconto\t4) Esci");
+        System.out.println("1) Aggiungi veicolo\t2) Rimuovi veicolo\n3)Stampa resoconto\t4) Piu' info\n5) Esci");
         System.out.println("--------------------------------------------");
     }
     
@@ -65,6 +65,9 @@ public class Menu {
         }
         if(scelta == 3){
             Menu.situazione(garage);
+        }
+        if(scelta == 4){
+            garage.piuInfo(EasyInput.inputI("Inserisci il posto: "));
         }
     }
     

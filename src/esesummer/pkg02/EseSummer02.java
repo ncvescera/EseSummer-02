@@ -16,7 +16,7 @@ public class EseSummer02 {
             scelta = EasyInput.inputI("");
             Menu.scelta(scelta, prova);
             
-        }while(scelta != 4);
+        }while(scelta != 5);
         
         //Menu.scelta(1, prova);
         //Menu.scelta(3, prova);
