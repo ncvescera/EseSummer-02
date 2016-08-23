@@ -32,7 +32,7 @@ public class Garage {
     }
     
     public int addVeicolo(int posto, Veicolo veicolo){
-        if(this.posti[posto] == null){
+        if(posto < this.POSTI && this.posti[posto] == null){
             this.posti[posto] = veicolo;
             veicolo.setTariffa(this.calcolaTariffa(veicolo));
             return 0; // andato a buon fine

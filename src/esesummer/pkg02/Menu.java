@@ -4,7 +4,7 @@ public class Menu {
     public static void print(){
         System.out.println("--------------------Menu--------------------");
         System.out.println("1) Aggiungi veicolo\t2) Rimuovi veicolo\n3)Stampa resoconto\t4) Esci");
-        System.out.println("(\"--------------------------------------------");
+        System.out.println("--------------------------------------------");
     }
     
     private static String scegliTipo(){

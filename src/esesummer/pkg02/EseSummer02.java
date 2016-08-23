@@ -10,9 +10,16 @@ public class EseSummer02 {
         //Veicolo uno = new Veicolo("moto","andrea","aaaaaaa","20/07/2015","20/08/2015");
         
         //int ris = prova.addVeicolo(3, uno);
-        Menu.print();
-        Menu.scelta(1, prova);
-        Menu.scelta(3, prova);
+        int scelta;
+        do{
+            Menu.print();
+            scelta = EasyInput.inputI("");
+            Menu.scelta(scelta, prova);
+            
+        }while(scelta != 4);
+        
+        //Menu.scelta(1, prova);
+        //Menu.scelta(3, prova);
         /*System.out.println(ris);
         prova.stampa();
         
