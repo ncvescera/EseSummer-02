@@ -55,6 +55,14 @@ public class Menu {
                 }
             }
         }
+        if(scelta == 2){
+           int success = garage.rmVeicolo(EasyInput.inputI("Inserisci il posto da liberare: "));
+           if(success == 1)
+               System.err.println("Impossibile liberare il posto! Posto gia' vuoto.");
+           else
+               System.out.println("Posto liberato con successo!");
+           
+        }
         if(scelta == 3){
             Menu.situazione(garage);
         }

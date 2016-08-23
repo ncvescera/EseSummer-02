@@ -31,6 +31,15 @@ public class Garage {
         return tariffa;
     }
     
+    public int rmVeicolo(int posto){
+        if(this.posti[posto] != null){
+            this.posti[posto] = null;
+            return 0;
+        }
+        else
+            return 1;
+    }
+    
     public int addVeicolo(int posto, Veicolo veicolo){
         if(posto < this.POSTI && this.posti[posto] == null){
             this.posti[posto] = veicolo;
@@ -51,7 +60,7 @@ public class Garage {
             if(this.posti[i] == null)
                 System.out.println("Posto: "+i+" VUOTO");
             else
-                System.out.println("Posto: "+i+"\tTipo: "+this.posti[i].getTipo()+"\tEntrata: "+this.posti[i].getEntrataS()+"\tUscita: "+this.posti[i].getUscitaS()+"\tTariffa: "+this.posti[i].getTariffa());
+                System.out.println("Posto: "+i+"\tTipo: "+this.posti[i].getTipo()+"\tProprietario: "+this.posti[i].getProprietario()+"\tEntrata: "+this.posti[i].getEntrataS()+"\tUscita: "+this.posti[i].getUscitaS()+"\tTariffa: "+this.posti[i].getTariffa());
             
             System.out.println("--------------------------------------------------------------------------------------");
         }
